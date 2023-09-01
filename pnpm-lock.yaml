@@ -12,7 +12,7 @@ dependencies:
     specifier: ^4.0.0
     version: 4.0.0(astro@2.10.15)(tailwindcss@3.3.3)
   '@astrojs/vercel':
-    specifier: ^3.1.0
+    specifier: ^3.8.2
     version: 3.8.2(astro@2.10.15)(react@18.2.0)
   '@types/alpinejs':
     specifier: ^3.7.2
@@ -1258,7 +1258,7 @@ packages:
     dependencies:
       browserslist: 4.21.10
       caniuse-lite: 1.0.30001525
-      fraction.js: 4.3.4
+      fraction.js: 4.3.6
       normalize-range: 0.1.2
       picocolors: 1.0.0
       postcss: 8.4.29
@@ -1939,8 +1939,8 @@ packages:
       fetch-blob: 3.2.0
     dev: false
 
-  /fraction.js@4.3.4:
-    resolution: {integrity: sha512-pwiTgt0Q7t+GHZA4yaLjObx4vXmmdcS0iSJ19o8d/goUGgItX9UZWKWNnLHehxviD8wU2IWRsnR8cD5+yOJP2Q==}
+  /fraction.js@4.3.6:
+    resolution: {integrity: sha512-n2aZ9tNfYDwaHhvFTkhFErqOMIb8uyzSQ+vGJBjZyanAKZVbGUQ1sngfk9FdkBw7G26O7AgNjLcecLffD1c7eg==}
     dev: false
 
   /fs-minipass@2.1.0:
