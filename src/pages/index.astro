@@ -9,37 +9,44 @@ import Footer from "../components/Footer.astro";
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>CV | {CONTENT.name}</title>
+		<title>{CONTENT.name}</title>
 	</head>
-	<body class="bg-background text-text flex flex-col min-h-screen">
-
-		<Header />
-
-		<!-- Bar Effect -->
-		<article class="mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-slate-400">
-				<div class="bg-slate-900 hover:scale-x-[2] w-full h-1.5" id="one"></div>
-				<div class="bg-red-900 hover:scale-x-[2] w-full h-1.5" id="two"></div>
-				<div class="bg-blue-900 hover:scale-x-[2] w-full h-1.5" id="three"></div>
-		</article>
-
-		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
+	<body class="bg-background text-text flex flex-col justify-center items-center h-screen">
+		<div class="w-full md:w-3/5 lg:w-3/4 border border-white">
+			<Header/>
 			<Container />
-		</main>
-
-		<Footer />
+		</div>
 	</body>
 </html>
 
 
 <style is:global>
+	@font-face {
+		font-family: 'BB-Regular';
+		src: url('/fonts/BB-Regular.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'BB-CondBold';
+		src: url('/fonts/BB-CondBold.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
 	*{
 		transition: 350ms ease-in-out;
-		font-family: 'Manrope', sans-serif;
+		font-family: 'BB-Regular', sans-mono;
+		box-sizing: border-box;
+	}
+
+	h4, h1 {
+		font-family: 'BB-CondBold', snas-mono;
 	}
 
 	@media only screen and (max-width: 480px){
