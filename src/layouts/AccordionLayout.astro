@@ -16,8 +16,8 @@ const { title, icon } = Astro.props;
   >
     <div class="flex items-center justify-between">
       <h4
-        class="text-2xl px-4 text-text/95 hover:text-text/100 flex justify-center items-start"
-        x-bind:class="{'text-black': selected, 'border': selected, 'border-black': selected}"
+        class="text-2xl px-4 flex justify-center items-start border border-black"
+        x-bind:class="{'text-black': selected, 'text-white': !selected}"
         >
         {title}
       </h4>
@@ -37,7 +37,7 @@ const { title, icon } = Astro.props;
     x-ref="container1"
     x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
   >
-    <div class="py-4 px-3 text-text/60">
+    <div class="py-4 px-3 text-text/90">
       <slot />
     </div>
   </div>
