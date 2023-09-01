@@ -27,7 +27,7 @@ export const projects = [
     {
         title: "Neon",
         description:
-            "Web-scraping project to crawl and analyze websites, utilizing one-shot NER, to build a graph representing connections between people.",
+            "Web-scraping project to crawl and analyze websites, utilizing one-shot NER and other algorithms to build a graph representing connections between people.",
         url: "https://github.com/jebikoh/neon",
         tech: "NER, LLMs, Web Scraping",
     },
